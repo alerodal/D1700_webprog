@@ -1,5 +1,4 @@
 
-
 const billettArray = [];
 function kjopBillett(){
     const antall = parseInt(document.getElementById("antall").value);
