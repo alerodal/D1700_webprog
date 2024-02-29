@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Oblig1 DATA1700</title>
+  <meta charset="UTF-8">
+  <title>Oblig1 DATA1700</title>
 
-    <style>
-        #velg{
-            width: 200px;
-            border-radius: 5px;
-        }
+  <style>
+    #velg{
+      width: 200px;
+      border-radius: 5px;
+    }
 
-        #antall{
-            width: 17px;
-        }
+    #antall{
+      width: 30px;
+    }
 
-        #kjop{
-            background-color: white;
-            border-radius: 5px;
-            border: 1px solid black;
-        }
+    #kjop{
+      background-color: white;
+      border-radius: 5px;
+      border: 1px solid black;
+    }
 
-        #slett{
-            background-color: white;
-            border-radius: 5px;
-            border: 1px solid black;
-        }
+    #slett{
+      background-color: white;
+      border-radius: 5px;
+      border: 1px solid black;
+    }
 
-        th {
-            width: 120px;
-            text-align: left;
-        }
-        td {
-            text-align: left;
-        }
-    </style>
+    th {
+      width: 120px;
+      text-align: left;
+    }
+    td {
+      text-align: left;
+    }
+  </style>
 
 </head>
 <body>
@@ -41,59 +41,57 @@
 <h1>Bestilling av kinobiletter</h1>
 
 <p>
-        Velg film:
-            <select id="velg">
-                <option class="nøytral">Velg film her</option>
-                <option class="film">Home Alone 1</option>
-                <option class="film">Home Alone 2</option>
-                <option class="film">Home Alone 3</option>
-                <option class="film">Home Alone 4</option>
-            </select>
-            <span id="filmMangel" style="color:red;"></span>
+  Velg film:
+  <select id="velg">
+    <option value="nøytral">Velg film her</option>
+    <option value="film">Home Alone 1</option>
+    <option value="film">Home Alone 2</option>
+    <option value="film">Home Alone 3</option>
+    <option value="film">Home Alone 4</option>
+  </select>
+  <span id="filmMangel" style="color:red;"></span>
 </p>
-        Antall <input type="text" id="antall">
-               <span id="antallMangel" style="color:red;"></span>
+Antall <input type="number" id="antall">
+<span id="antallMangel" style="color:red;"></span>
 
 <p>
 <table>
-    <tr>
-        <td>Fornavn</td><td><input type="text" id="fornavn" value="">
-        <span id="fornavnMangel" style="color:red;"></span></td>
-    </tr>
+  <tr>
+    <td>Fornavn</td><td><input type="text" id="fornavn" value="">
+    <span id="fornavnMangel" style="color:red;"></span></td>
+  </tr>
 
-    <tr>
-        <td>Etternavn</td><td><input type="text" id="etternavn" value="">
-        <span id="etternavnMangel" style="color:red;"></span></td>
-    </tr>
+  <tr>
+    <td>Etternavn</td><td><input type="text" id="etternavn" value="">
+    <span id="etternavnMangel" style="color:red;"></span></td>
+  </tr>
 
-    <tr>
-        <td>Telefonnr</td><td><input type="text" id="telefonnr" value="">
-        <span id="telefonMangel" style="color:red;"></span></td>
-    </tr>
+  <tr>
+    <td>Telefonnr</td><td><input type="text" id="telefonnr" value="">
+    <span id="telefonMangel" style="color:red;"></span></td>
+  </tr>
 
-    <tr>
-        <td>Epost</td><td><input type="text" id="epost" value="">
-        <span id="epostMangel" style="color:red;"></span></td>
-    </tr>
+  <tr>
+    <td>Epost</td><td><input type="text" id="epost" value="">
+    <span id="epostMangel" style="color:red;"></span></td>
+  </tr>
 
-    <tr>
-        <td><button id="kjop" onclick="kjopBillett();">Kjøp billett</button></td>
-    </tr>
+  <tr>
+    <td><button id="kjop" onclick="kjopBillett();">Kjøp billett</button></td>
+  </tr>
 </table>
 
 <h2>Alle billetter</h2>
 
 <table>
-    <tr>
-        <div id="ut"></div>
-    </tr>
 
-    <tr>
-        <td><button id="slett" onclick="slettBillett();">Slett alle billettene</button></td>
-    </tr>
+  <div id="ut"></div>
+
+
+  <tr>
+    <td><button id="slett" onclick="slettBillett();">Slett alle billettene</button></td>
+  </tr>
 </table>
-
 <script src="oblig1.js"></script>
-
 </body>
 </html>
